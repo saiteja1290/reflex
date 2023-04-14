@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'ethnocentric';
+    src: url(ethnocentric\ rg.otf);
+}
+:root{
+    --background : black;
+    --color: white;
+}
+body{
+    background-color: var(--background);
+    color: var(--color);
+    font-family: 'ethnocentric';
+    /* height: 100vh; */
+    margin: 0;
+    padding: 0;
+    background-image: url("back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* backface-visibility: hidden; */
+}
+.welcom{
+    /* border: 1px solid white; */
+    font-size: 95px;
+    text-align: center;
+    margin-top: 17%;
+    /* text-shadow: 2px 2px rgb(255, 255, 255); */
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                   0 0 50px rgb(255, 255, 255), 0 rgb(255, 255, 255)#9554b3, 0 0 70px #ffffff;
+    }
+    to {
+      text-shadow: 0 0 20px #eeeeee;
+    }
+  }
+.container{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: greenyellow;
+    font-size: 40px;
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
+}
+@keyframes glow2 {
+    from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                   0 0 50px rgb(255, 255, 255), 0 rgb(255, 255, 255)#9554b3, 0 0 70px #ffffff;
+    }
+    to {
+      text-shadow: 0 0 20px greenyellow, 0 0 40px greenyellow;
+    }
+  }
