@@ -5,13 +5,13 @@ start.addEventListener('click',flicks());
 
 let count = 0;
 function flicks() {
-    let y = Math.floor(Math.random() * 249) + 1;
+    let y = Math.floor(Math.random() * 98) + 1;
     let x = '#cell-'+y;
     const aimat = document.querySelector(x);
     aimat.style.backgroundColor = "red";
     aimat.style.color = 'red';
     aimat.addEventListener("click",() => {
-      audio.play();
+        audio.play();
         const yes = document.querySelector(x);
         yes.style.backgroundColor = "black";
         yes.style.color = 'black';
@@ -25,7 +25,7 @@ function flicks() {
 
 let intervalId;
 let minutes = 0;
-let seconds = 30;
+let seconds = 20;
 
 const timerEl = document.getElementById('timeleft');
 const startBtn = document.getElementById('start');
@@ -36,7 +36,7 @@ op1.addEventListener('click',op1func);
 function op1func() {
   clearInterval(intervalId);
   minutes = 0;
-  timerEl.innerText = '00:30';
+  timerEl.innerText = '00:20';
 }
 
 
